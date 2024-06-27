@@ -125,7 +125,6 @@ public class TestCreateCourier {
     @Description("Удаление уже существующего курьера")
     public void deleteTestCourierIfExist() {
         if(courier.isInApp()) {
-            CourierAPI.loginCourier(courier);
             CourierAPI.deleteCourier(courier);
         }
     }
